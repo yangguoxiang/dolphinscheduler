@@ -77,7 +77,7 @@ public class AlertServer implements Closeable {
     public void start(ApplicationReadyEvent readyEvent) {
         log.info("Starting Alert server");
 
-        checkTable();
+//        checkTable();
         startServer();
 
         Executors.newScheduledThreadPool(1)
