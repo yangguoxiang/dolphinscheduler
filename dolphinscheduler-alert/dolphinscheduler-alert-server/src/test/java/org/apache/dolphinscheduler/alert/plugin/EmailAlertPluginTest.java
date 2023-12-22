@@ -53,7 +53,7 @@ import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.List;
 
-@ActiveProfiles(ProfileType.H2)
+@ActiveProfiles(ProfileType.DM)
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = AlertServer.class)
 public class EmailAlertPluginTest {
@@ -68,7 +68,7 @@ public class EmailAlertPluginTest {
 
     @BeforeClass
     public static void setUpClass() {
-        System.setProperty("spring.profiles.active", "h2");
+        System.setProperty("spring.profiles.active", "dameng");
     }
 
     @Test

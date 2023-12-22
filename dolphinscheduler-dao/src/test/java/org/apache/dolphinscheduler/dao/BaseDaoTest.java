@@ -28,7 +28,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@ActiveProfiles(value = ProfileType.H2)
+@ActiveProfiles(value = ProfileType.DM)
 @Transactional
 @Rollback
 public abstract class BaseDaoTest {
